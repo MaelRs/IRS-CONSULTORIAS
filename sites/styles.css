@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366; /* Azul Escuro */
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #003366; /* Azul Escuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#servicos h2 {
+    color: #FF3333; /* Vermelho */
+}
+
+#servicos p {
+    color: #2E8B57; /* Verde Esmeralda */
+}
+
+#historia h2,
+#quem-somos h2,
+#parceiros h2,
+#contatos h2 {
+    color: #003366; /* Azul Escuro */
+}
+
+#contatos p {
+    color: #003366; /* Azul Escuro */
+}

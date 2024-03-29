@@ -1,23 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRS-CONSULTORIAS</title>
+    <title>IRS Consultorias</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bem Vindo a IRS-CONSULTORIAS</h1>
-        <p>Navegue pelo menu para acessar as aplicações desejadas. </p>
-    </header>
-    <div>
+        <h1>IRS Consultorias</h1>
         <nav>
-        <a href="#">HOME</a>
-        <a href="#">CONTRATOS</a>
-        <a href="#">FALE CONOSCO</a>
-        <a href="#">PARCEIROS</a>
+            <ul>
+                <li><a href="historia.html">Nossa História</a></li>
+                <li><a href="resumo.html">Quem Somos</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
         </nav>
-    </div>
-    
+    </header>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Somos especializados em consultorias nas seguintes áreas:</p>
+        <ul>
+            <li>Sistemas Informatizados</li>
+            <li>ERP (Enterprise Resource Planning)</li>
+            <li>Sistemas Informatizados de Gestão de Saúde</li>
+            <li>Consultorias Financeiras</li>
+            <li>Consultorias Jurídicas</li>
+            <li>Consultorias Empresariais</li>
+            <li>Consultorias de Recursos Humanos</li>
+            <li>Consultorias em Logística</li>
+            <li>Consultorias em Investimentos</li>
+            <li>Consultorias em Saúde</li>
+        </ul>
+    </section>
+
+    <section id="historia">
+        <h2>Nossa História</h2>
+        <p>Texto sobre a história da empresa IRS Consultorias.</p>
+    </section>
+
+    <section id="quem-somos">
+        <h2>Quem Somos</h2>
+        <p>Texto sobre quem somos e nossa missão.</p>
+    </section>
+
+    <section id="parceiros">
+        <h2>Parceiros</h2>
+        <p>Texto sobre nossos parceiros e colaboradores.</p>
+    </section>
+
+    <section id="contatos">
+        <h2>Contatos</h2>
+        <form id="contactForm">
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IRS Consultorias. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var email = document.getElementById("email").value;
+            var telefone = document.getElementById("telefone").value;
+
+            // Enviar dados por e-mail (exemplo)
+            var mensagem = "E-mail: " + email + "\nTelefone: " + telefone;
+            window.location.href = "mailto:robertdossantos.ismael@gmail.com?subject=Contato%20IRS%20Consultorias&body=" + encodeURIComponent(mensagem);
+        });
+    </script>
 </body>
 </html>
